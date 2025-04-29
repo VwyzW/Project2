@@ -2,12 +2,15 @@ from Final import book
 
 b = book()
 
+v = ""
 
 print(b.name)
 
-v = input("Would you like to add a book?")
-if v == "yes":    
-    c = b.Add() 
+while v != 'no':
 
-elif v == "no":
-    c = b.minus()
+    v = input("Would you like to add a book?'yes or no'")
+    if v == "yes":
+        c = b.Add() 
+
+    elif v == "no":
+        c = b.minus()
