@@ -31,3 +31,4 @@ def showbook(self):
     for x in self.book:
         print(x)
         print(self.book[x]["aother"])
+        print(self.book[x]["price"])
