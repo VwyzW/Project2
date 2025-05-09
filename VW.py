@@ -24,3 +24,4 @@ while True:
 
     else:
         print("Invalid input. Please type 'yes or no (show or delete)'")
+  
