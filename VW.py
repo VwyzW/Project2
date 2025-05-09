@@ -6,9 +6,9 @@ v = ""
 
 print(b.name)
 
-while v != 'no':
+while True:
 
-    v = input("Would you like to add a book?'yes or no'(or 'find' to query)").strip().lower()
+    v = input("Would you like to add a book?'yes or no (show or delete)'").strip().lower()
     if v == "yes":
         b.Add() 
 
@@ -16,12 +16,11 @@ while v != 'no':
         print("Exiting.") 
         break
     
-    elif v == "find":
-        title = input("Enter the book title to find: \n").strip().upper()
-        if title in b.book:
-            info = b.book[title]
-            print(f"\nFound '{title}':")
-            print(" Author:", info['Author'])
-            print(" Price: ",info['Price'])
+    elif v == "show":
+        b.showbook()
+
+    elif v == 'delete':
+        b.Minus()
+
     else:
-        print("Invalid input. Please type 'yes' ,'find or no")
+        print("Invalid input. Please type 'yes or no (show or delete)'")
