@@ -1,4 +1,4 @@
-from Untitled1 import book
+from Final import book
 
 def main():
     b = book()
@@ -16,7 +16,7 @@ def main():
             b.showbook()
 
         elif v == 'delete':
-            b.Minus()
+            b.minus()
 
         else:
             print("Invalid input. Please type 'yes or no (show or delete)'")
