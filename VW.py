@@ -5,7 +5,7 @@ def main():
 
     while True:
         v = input("Would you like to add a book?'yes or no (show or delete)'").strip().lower()
-        if v == 'yas':
+        if v == 'yes':
             b.Add() 
         
         elif v == 'no':
@@ -16,10 +16,10 @@ def main():
             b.showbook()
 
         elif v == 'delete':
-            b.minus()
+            b.Minus()
 
         else:
             print("Invalid input. Please type 'yes or no (show or delete)'")
 
-if __name__ == "__main__":
-    main
+if __name__ == '__main__':
+    main()
