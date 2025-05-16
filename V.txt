@@ -1,2 +1,2 @@
 author: Vincent
-price: 180.0
+price: 12.0
