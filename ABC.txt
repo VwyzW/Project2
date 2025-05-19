@@ -1,2 +1,0 @@
-author: Vincent
-price: 100.0
