@@ -15,6 +15,7 @@ class book():
             for t in self.books:
                 f.write(t + '\n')
 
+
     def Add(self):
         self.title = input("Enter the name of the book you add: \n").strip().upper()
         if self.title in self.books:
